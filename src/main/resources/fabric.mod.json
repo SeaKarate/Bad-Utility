@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bad-hack",
+	"version": "${version}",
+	"name": "Bad Utility",
+	"description": "A Bad Utility Client Go Sub To @kJTheDev",
+	"authors": [
+		"kJTheDev"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/SeaKarate/Bad-Utility"
+	},
+	"license": "MIT",
+	"icon": "assets/bad-utility/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.kjthedev.badutility.BadUtility"
+		],
+		"client": [
+			"com.kjthedev.badutility.BadUtilityClient"
+		],
+		"fabric-datagen": [
+			"com.kjthedev.badutility.BadUtilityDataGenerator"
+		]
+	},
+	"mixins": [
+		"bad-utility.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
